@@ -1,0 +1,322 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #0d1117;
+}
+
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.intro {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wave {
+    font-size: 20px;
+    color: #ff7b72;
+}
+
+h1 {
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.subtitle, .education {
+    font-size: 20px;
+    color: #8b949e;
+}
+
+.profile-pic {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+/* Sections (About, Skills, Projects, Resume, Contact) */
+.section {
+    padding: 100px 20px;
+    text-align: center;
+    background-color: #161b22;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.8s ease-in-out;
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Buttons */
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    color: #ffffff;
+    background-color: #238636;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #2ea043;
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0b1120;
+    color: white;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skills-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Projects Section */
+.projects-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.projects-subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projects-card {
+    width: 150px;
+    text-align: center;
+}
+
+.projects-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projects-card p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* Resume Section */
+#resume a.btn {
+    font-size: 20px;
+}
+
+/* Contact Section */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #30363d;
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+form button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #238636;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background-color: #2ea043;
+}
+
+/* Scroll Animation */
+.section {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro .subtitle,
+    .intro .education {
+        font-size: 16px;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .skills-title {
+        font-size: 2rem;
+    }
+
+    .skills-subtitle {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 10px;
+    }
+
+    .intro h1 {
+        font-size: 26px;
+    }
+
+    .profile-pic {
+        width: 150px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .skills-title {
+        font-size: 1.8rem;
+    }
+
+    .skills-subtitle {
+        font-size: 0.9rem;
+    }
+}

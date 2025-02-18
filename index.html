@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jithendra's Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header class="fixed top-0 w-full shadow-md z-50">
+        <nav class="container mx-auto p-4 flex justify-center items-center">
+            <!-- Menu button (only visible on mobile) -->
+            <button id="menu-btn" class="text-white text-2xl md:hidden focus:outline-none mx-auto">
+                ☰
+            </button>
+    
+            <!-- Navbar links (hidden on mobile, visible on larger screens) -->
+            <ul id="nav-links" class="hidden md:flex space-x-6">
+                <li><a href="#about" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">About</a></li>
+                <li><a href="#skills" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Skills</a></li>
+                <li><a href="#projects" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Projects</a></li>
+                <li><a href="#resume" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Resume</a></li>
+                <li><a href="#contact" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Contact</a></li>
+            </ul>
+    
+            <!-- Mobile Menu (hidden by default, displayed when the menu button is clicked) -->
+            <ul id="mobile-nav" class="absolute left-0 top-full bg-black w-full text-center hidden md:hidden space-y-4 py-4">
+                <li><a href="#about" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">About</a></li>
+                <li><a href="#skills" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Skills</a></li>
+                <li><a href="#projects" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Projects</a></li>
+                <li><a href="#resume" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Resume</a></li>
+                <li><a href="#contact" class="text-[#58a6ff] font-bold text-lg hover:text-[#1f6feb] transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileNav = document.getElementById('mobile-nav');
+    
+            menuBtn.addEventListener('click', () => {
+                mobileNav.classList.toggle('hidden');
+            });
+        });
+    </script>
+    
+    
+    <section id="home" class="home">
+        <div class="intro">
+            <p class="wave">👋 Hi, my name is</p>
+            <h1>Pothuri Jithendra Varma</h1>
+            <p class="subtitle">Computer Science Engineering student | AI | Data Science | Web Development</p>
+            <p class="education">🎓 B.Tech in CSE at GITAM (2022–Present)</p>
+            <div class="buttons">
+                <a href="#projects" class="btn">View my projects →</a>
+                <a href="JITHENDRA_RESUME.pdf" download class="btn">Resume</a>
+                <a href="https://www.linkedin.com/" target="_blank" class="btn">LinkedIn</a>
+                <a href="https://github.com/" target="_blank" class="btn">GitHub</a>
+            </div>
+        </div>
+        <img src="IMG_9354.jpg" alt="Jithendra Varma" class="profile-pic">
+    </section>
+
+    <section id="about" class="section"> 
+        <h2>About Me</h2>
+        <p>I'm a passionate Computer Science Engineering student specializing in AI, Data Science, and Web Development.With a strong foundation in programming languages such as Python, Java, C++, HTML, and CSS, I have honed my skills in software development, problem-solving, and system design. I am proficient in using industry-standard tools like VS Code and Figma, which help me bring my ideas to life through efficient coding and intuitive UI/UX design.My academic journey is complemented by hands-on experience gained through various projects and certifications. I have successfully completed multiple Coursera certifications in AI, Python, and networking, further solidifying my understanding of complex computing concepts. Additionally, I had the privilege of participating in the prestigious Smart India Hackathon, where I worked collaboratively to develop innovative solutions for real-world challenges.I am deeply passionate about leveraging technology to address practical problems, streamline processes, and enhance user experiences. My curiosity drives me to continuously learn and experiment with new technologies, frameworks, and methodologies. Whether it's designing intelligent systems, analyzing data to derive insights, or creating dynamic and responsive web applications, I am always eager to explore innovative approaches.As I continue to grow in my field, I am actively seeking opportunities to expand my knowledge, collaborate on impactful projects, and contribute to cutting-edge technological advancements. My goal is to make meaningful contributions to the tech industry while constantly evolving as a developer, problem solver, and innovator.I believe that technology has the power to transform lives, and I am committed to leveraging my skills to create impactful solutions. Whether it’s designing intelligent AI models, analyzing complex datasets, or developing seamless web applications, I constantly seek opportunities to push the boundaries of what is possible.I am an avid learner, always eager to explore new technologies, frameworks, and methodologies. My curiosity drives me to stay updated with industry trends and continuously refine my skill set. I take a hands-on approach to learning, actively working on projects that challenge me and enhance my understanding of cutting-edge technologies.As I advance in my career, I am excited to collaborate with like-minded individuals, contribute to innovative projects, and gain real-world industry experience. My ultimate goal is to create technology-driven solutions that solve real-world problems, improve efficiency, and enhance user experiences.With a growth mindset and a passion for innovation, I look forward to shaping a future where technology is a force for positive transformation.My ability to analyze complex problems and break them down into structured, logical solutions has been a key strength throughout my academic and project-based work. Whether debugging code, optimizing algorithms, or designing scalable software architectures, I enjoy the challenge of finding efficient and innovative solutions to technical problems.</p>
+    </section>
+    
+    <section id="skills" class="skills-section">
+        <h2 class="skills-title">Skills</h2>
+        <p class="skills-subtitle">These are the technologies I've worked with</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="JavaScript.png" alt="JavaScript">
+                <p>JAVASCRIPT</p>
+            </div>
+            <div class="skill-card">
+                <img src="python.png" alt="Python">
+                <p>PYTHON</p>
+            </div>
+            <div class="skill-card">
+                <img src="C programming.png" alt="C">
+                <p>C</p>
+            </div>
+            <div class="skill-card">
+                <img src="c++.png" alt="C++">
+                <p>C++</p>
+            </div>
+            <div class="skill-card">
+                <img src="java.png" alt="Java">
+                <p>JAVA</p>
+            </div>
+            <div class="skill-card">
+                <img src="html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="skill-card">
+                <img src="CSS-Logo-2011.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="projects-section">
+<h2 class="projects-title">projects </h2>
+<p class="projects-subtitle">These are the projects I've worked on</p> 
+<div class="projects-grid">
+<div class="projects-card">
+<image src="tictactoe.svg.png" alt="tictactoe">
+<p>tictactoe</p>
+</div>
+<div class="projects-card">
+<img src="dnd.jpg" alt="dnd">
+<p>deaf and dumb</p> 
+</div>
+</section>
+    
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <a href="JITHENDRA_RESUME.pdf" download class="btn">Download Resume</a>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="mailto:jithendra25062005@gmail.com" method="GET" enctype="text/plain">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+</body>
+</html>
